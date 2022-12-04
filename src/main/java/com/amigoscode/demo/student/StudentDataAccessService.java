@@ -29,6 +29,7 @@ public class StudentDataAccessService {
                 " gender " +
                 "FROM student";
 
+        System.out.println("Sql :"+sql);
         return jdbcTemplate.query(sql, mapStudentFomDb());
     }
 
